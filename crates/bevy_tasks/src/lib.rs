@@ -1,4 +1,3 @@
-#![warn(missing_docs)]
 #![doc = include_str!("../README.md")]
 
 mod slice;
@@ -34,6 +33,8 @@ pub use futures_lite::future::block_on;
 
 mod iter;
 pub use iter::ParallelIterator;
+
+pub use futures_lite;
 
 #[allow(missing_docs)]
 pub mod prelude {
